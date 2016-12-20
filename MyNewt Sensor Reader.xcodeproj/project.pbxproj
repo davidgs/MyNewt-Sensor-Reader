@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		681D5DF81E09D3DB00F33CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5DF71E09D3DB00F33CF1 /* AppDelegate.swift */; };
+		681D5DFA1E09D3DB00F33CF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5DF91E09D3DB00F33CF1 /* ViewController.swift */; };
+		681D5DFC1E09D3DB00F33CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681D5DFB1E09D3DB00F33CF1 /* Assets.xcassets */; };
+		681D5DFF1E09D3DB00F33CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681D5DFD1E09D3DB00F33CF1 /* Main.storyboard */; };
+		681D5E0A1E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E091E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderTests.swift */; };
+		681D5E151E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E141E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		681D5E061E09D3DB00F33CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681D5DEC1E09D3DB00F33CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 681D5DF31E09D3DB00F33CF1;
+			remoteInfo = "MyNewt Sensor Reader";
+		};
+		681D5E111E09D3DB00F33CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 681D5DEC1E09D3DB00F33CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 681D5DF31E09D3DB00F33CF1;
+			remoteInfo = "MyNewt Sensor Reader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		681D5DF41E09D3DB00F33CF1 /* MyNewt Sensor Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyNewt Sensor Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		681D5DF71E09D3DB00F33CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		681D5DF91E09D3DB00F33CF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		681D5DFB1E09D3DB00F33CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		681D5DFE1E09D3DB00F33CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		681D5E001E09D3DB00F33CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681D5E051E09D3DB00F33CF1 /* MyNewt Sensor ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyNewt Sensor ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		681D5E091E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewt_Sensor_ReaderTests.swift; sourceTree = "<group>"; };
+		681D5E0B1E09D3DB00F33CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681D5E101E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyNewt Sensor ReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		681D5E141E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewt_Sensor_ReaderUITests.swift; sourceTree = "<group>"; };
+		681D5E161E09D3DB00F33CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		681D5DF11E09D3DB00F33CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681D5E021E09D3DB00F33CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681D5E0D1E09D3DB00F33CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		681D5DEB1E09D3DB00F33CF1 = {
+			isa = PBXGroup;
+			children = (
+				681D5DF61E09D3DB00F33CF1 /* MyNewt Sensor Reader */,
+				681D5E081E09D3DB00F33CF1 /* MyNewt Sensor ReaderTests */,
+				681D5E131E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests */,
+				681D5DF51E09D3DB00F33CF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		681D5DF51E09D3DB00F33CF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				681D5DF41E09D3DB00F33CF1 /* MyNewt Sensor Reader.app */,
+				681D5E051E09D3DB00F33CF1 /* MyNewt Sensor ReaderTests.xctest */,
+				681D5E101E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		681D5DF61E09D3DB00F33CF1 /* MyNewt Sensor Reader */ = {
+			isa = PBXGroup;
+			children = (
+				681D5DF71E09D3DB00F33CF1 /* AppDelegate.swift */,
+				681D5DF91E09D3DB00F33CF1 /* ViewController.swift */,
+				681D5DFB1E09D3DB00F33CF1 /* Assets.xcassets */,
+				681D5DFD1E09D3DB00F33CF1 /* Main.storyboard */,
+				681D5E001E09D3DB00F33CF1 /* Info.plist */,
+			);
+			path = "MyNewt Sensor Reader";
+			sourceTree = "<group>";
+		};
+		681D5E081E09D3DB00F33CF1 /* MyNewt Sensor ReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				681D5E091E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderTests.swift */,
+				681D5E0B1E09D3DB00F33CF1 /* Info.plist */,
+			);
+			path = "MyNewt Sensor ReaderTests";
+			sourceTree = "<group>";
+		};
+		681D5E131E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				681D5E141E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift */,
+				681D5E161E09D3DB00F33CF1 /* Info.plist */,
+			);
+			path = "MyNewt Sensor ReaderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		681D5DF31E09D3DB00F33CF1 /* MyNewt Sensor Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681D5E191E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor Reader" */;
+			buildPhases = (
+				681D5DF01E09D3DB00F33CF1 /* Sources */,
+				681D5DF11E09D3DB00F33CF1 /* Frameworks */,
+				681D5DF21E09D3DB00F33CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyNewt Sensor Reader";
+			productName = "MyNewt Sensor Reader";
+			productReference = 681D5DF41E09D3DB00F33CF1 /* MyNewt Sensor Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		681D5E041E09D3DB00F33CF1 /* MyNewt Sensor ReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681D5E1C1E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor ReaderTests" */;
+			buildPhases = (
+				681D5E011E09D3DB00F33CF1 /* Sources */,
+				681D5E021E09D3DB00F33CF1 /* Frameworks */,
+				681D5E031E09D3DB00F33CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				681D5E071E09D3DB00F33CF1 /* PBXTargetDependency */,
+			);
+			name = "MyNewt Sensor ReaderTests";
+			productName = "MyNewt Sensor ReaderTests";
+			productReference = 681D5E051E09D3DB00F33CF1 /* MyNewt Sensor ReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		681D5E0F1E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681D5E1F1E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor ReaderUITests" */;
+			buildPhases = (
+				681D5E0C1E09D3DB00F33CF1 /* Sources */,
+				681D5E0D1E09D3DB00F33CF1 /* Frameworks */,
+				681D5E0E1E09D3DB00F33CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				681D5E121E09D3DB00F33CF1 /* PBXTargetDependency */,
+			);
+			name = "MyNewt Sensor ReaderUITests";
+			productName = "MyNewt Sensor ReaderUITests";
+			productReference = 681D5E101E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		681D5DEC1E09D3DB00F33CF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Dragonfly IoT";
+				TargetAttributes = {
+					681D5DF31E09D3DB00F33CF1 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 54PAT44GP7;
+						ProvisioningStyle = Automatic;
+					};
+					681D5E041E09D3DB00F33CF1 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 54PAT44GP7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 681D5DF31E09D3DB00F33CF1;
+					};
+					681D5E0F1E09D3DB00F33CF1 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 54PAT44GP7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 681D5DF31E09D3DB00F33CF1;
+					};
+				};
+			};
+			buildConfigurationList = 681D5DEF1E09D3DB00F33CF1 /* Build configuration list for PBXProject "MyNewt Sensor Reader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 681D5DEB1E09D3DB00F33CF1;
+			productRefGroup = 681D5DF51E09D3DB00F33CF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				681D5DF31E09D3DB00F33CF1 /* MyNewt Sensor Reader */,
+				681D5E041E09D3DB00F33CF1 /* MyNewt Sensor ReaderTests */,
+				681D5E0F1E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		681D5DF21E09D3DB00F33CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681D5DFC1E09D3DB00F33CF1 /* Assets.xcassets in Resources */,
+				681D5DFF1E09D3DB00F33CF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681D5E031E09D3DB00F33CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681D5E0E1E09D3DB00F33CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		681D5DF01E09D3DB00F33CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681D5DFA1E09D3DB00F33CF1 /* ViewController.swift in Sources */,
+				681D5DF81E09D3DB00F33CF1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681D5E011E09D3DB00F33CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681D5E0A1E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681D5E0C1E09D3DB00F33CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681D5E151E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		681D5E071E09D3DB00F33CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 681D5DF31E09D3DB00F33CF1 /* MyNewt Sensor Reader */;
+			targetProxy = 681D5E061E09D3DB00F33CF1 /* PBXContainerItemProxy */;
+		};
+		681D5E121E09D3DB00F33CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 681D5DF31E09D3DB00F33CF1 /* MyNewt Sensor Reader */;
+			targetProxy = 681D5E111E09D3DB00F33CF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		681D5DFD1E09D3DB00F33CF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				681D5DFE1E09D3DB00F33CF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		681D5E171E09D3DB00F33CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		681D5E181E09D3DB00F33CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		681D5E1A1E09D3DB00F33CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 54PAT44GP7;
+				INFOPLIST_FILE = "MyNewt Sensor Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		681D5E1B1E09D3DB00F33CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 54PAT44GP7;
+				INFOPLIST_FILE = "MyNewt Sensor Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		681D5E1D1E09D3DB00F33CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 54PAT44GP7;
+				INFOPLIST_FILE = "MyNewt Sensor ReaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNewt Sensor Reader.app/Contents/MacOS/MyNewt Sensor Reader";
+			};
+			name = Debug;
+		};
+		681D5E1E1E09D3DB00F33CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 54PAT44GP7;
+				INFOPLIST_FILE = "MyNewt Sensor ReaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-ReaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyNewt Sensor Reader.app/Contents/MacOS/MyNewt Sensor Reader";
+			};
+			name = Release;
+		};
+		681D5E201E09D3DB00F33CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 54PAT44GP7;
+				INFOPLIST_FILE = "MyNewt Sensor ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "MyNewt Sensor Reader";
+			};
+			name = Debug;
+		};
+		681D5E211E09D3DB00F33CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 54PAT44GP7;
+				INFOPLIST_FILE = "MyNewt Sensor ReaderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-ReaderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "MyNewt Sensor Reader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		681D5DEF1E09D3DB00F33CF1 /* Build configuration list for PBXProject "MyNewt Sensor Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681D5E171E09D3DB00F33CF1 /* Debug */,
+				681D5E181E09D3DB00F33CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681D5E191E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681D5E1A1E09D3DB00F33CF1 /* Debug */,
+				681D5E1B1E09D3DB00F33CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		681D5E1C1E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor ReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681D5E1D1E09D3DB00F33CF1 /* Debug */,
+				681D5E1E1E09D3DB00F33CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		681D5E1F1E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor ReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681D5E201E09D3DB00F33CF1 /* Debug */,
+				681D5E211E09D3DB00F33CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 681D5DEC1E09D3DB00F33CF1 /* Project object */;
+}
