@@ -13,6 +13,10 @@
 		681D5DFF1E09D3DB00F33CF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681D5DFD1E09D3DB00F33CF1 /* Main.storyboard */; };
 		681D5E0A1E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E091E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderTests.swift */; };
 		681D5E151E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E141E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift */; };
+		681D5E231E0ABBB600F33CF1 /* PrefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E221E0ABBB600F33CF1 /* PrefsView.swift */; };
+		681D5E251E0ABF5D00F33CF1 /* MyNewtSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E241E0ABF5D00F33CF1 /* MyNewtSensor.swift */; };
+		681D5E271E0AC01500F33CF1 /* MyNewtDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E261E0AC01500F33CF1 /* MyNewtDev.swift */; };
+		6859622B1E0AFDB500AB01A7 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685962291E0AFDB500AB01A7 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		681D5E101E09D3DB00F33CF1 /* MyNewt Sensor ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyNewt Sensor ReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		681D5E141E09D3DB00F33CF1 /* MyNewt_Sensor_ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNewt_Sensor_ReaderUITests.swift; sourceTree = "<group>"; };
 		681D5E161E09D3DB00F33CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		681D5E221E0ABBB600F33CF1 /* PrefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsView.swift; sourceTree = "<group>"; };
+		681D5E241E0ABF5D00F33CF1 /* MyNewtSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNewtSensor.swift; sourceTree = "<group>"; };
+		681D5E261E0AC01500F33CF1 /* MyNewtDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNewtDev.swift; sourceTree = "<group>"; };
+		685962291E0AFDB500AB01A7 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 				681D5DF91E09D3DB00F33CF1 /* ViewController.swift */,
 				681D5DFB1E09D3DB00F33CF1 /* Assets.xcassets */,
 				681D5DFD1E09D3DB00F33CF1 /* Main.storyboard */,
+				685962291E0AFDB500AB01A7 /* HelpViewController.swift */,
+				681D5E221E0ABBB600F33CF1 /* PrefsView.swift */,
+				681D5E241E0ABF5D00F33CF1 /* MyNewtSensor.swift */,
+				681D5E261E0AC01500F33CF1 /* MyNewtDev.swift */,
 				681D5E001E09D3DB00F33CF1 /* Info.plist */,
 			);
 			path = "MyNewt Sensor Reader";
@@ -258,8 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681D5E231E0ABBB600F33CF1 /* PrefsView.swift in Sources */,
+				6859622B1E0AFDB500AB01A7 /* HelpViewController.swift in Sources */,
 				681D5DFA1E09D3DB00F33CF1 /* ViewController.swift in Sources */,
+				681D5E271E0AC01500F33CF1 /* MyNewtDev.swift in Sources */,
 				681D5DF81E09D3DB00F33CF1 /* AppDelegate.swift in Sources */,
+				681D5E251E0ABF5D00F33CF1 /* MyNewtSensor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -389,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -400,10 +416,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 54PAT44GP7;
 				INFOPLIST_FILE = "MyNewt Sensor Reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-Reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -414,10 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 54PAT44GP7;
 				INFOPLIST_FILE = "MyNewt Sensor Reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonfly.MyNewt-Sensor-Reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -505,6 +525,7 @@
 				681D5E1B1E09D3DB00F33CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		681D5E1C1E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				681D5E1E1E09D3DB00F33CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		681D5E1F1E09D3DB00F33CF1 /* Build configuration list for PBXNativeTarget "MyNewt Sensor ReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +543,7 @@
 				681D5E211E09D3DB00F33CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
