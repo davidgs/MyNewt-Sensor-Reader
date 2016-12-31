@@ -6,35 +6,35 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		YqnuxOt9TRNXybiu/7oCNHl3cG0=
+		mwmfY1p4DqfG2Ku0y/JD0INRUCw=
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		1k2TvzZr26JYX6iTnYT5j4ud6RI=
+		thSxf1iPcYX3NAwgQSGgCNndJvQ=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/03d-fS-Wz1-view-hIh-Jd-hHB.nib</key>
 		<data>
-		UVbQv1/0v/vNfsF0eB4lYlsQL00=
+		J05A6bAvXsU2HzRb9rHyRa77Ta0=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		N58rnbotcT7waiVQQbSGxiRbsAU=
+		dXGILAJ+6Dm3czE8wH5Grxmk42Y=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<data>
-		ztAQST7/nOrlaHPos86h+FgB94g=
+		vZ/psVDf0tJf9uxMu1wKFoGCUMs=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/NSViewController-UKj-aE-GhW.nib</key>
 		<data>
-		MTowwAkkfxKHlNdyL5bc/oKsjyU=
+		uM+uZwJKBB/oGPFai9GZcFbggnw=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-82L-BE-E0N.nib</key>
 		<data>
-		bbWh6vwTS6BISM0RnFacw0Tvsl8=
+		kyxSI91jUi3n6//I+0BmcSoMI9A=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib</key>
 		<data>
-		/LpuOC8EY5+kkIooWCAXhTw9xvs=
+		V7z3uBX/yw/ExY8HlqRSd1zzlJQ=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/UKj-aE-GhW-view-aDi-oJ-7RB.nib</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib</key>
 		<data>
-		n8yb3gADADIF0DQJsmV7diFPVhE=
+		ttzZusOjmLU5CVar2jU280CmvaA=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/prefsView.nib</key>
 		<data>
-		ung2EXvSIkiRJWNhhF3hJ7hbEVU=
+		/uSs2sSxqV+hk1tZJdbksV6nwvo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,196 +55,196 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			nq9r+XcYGYmzDRkf9aQJKaTFQQs=
+			KON40zRv1AWmkxEihfDGX46s3pc=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftAppKit" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftAppKit" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			jRpiLh2glSFExcozRbQNz5fXUSI=
+			w7uwMImFbftrngNXGHC2Fp6l08M=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftCore" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftCore" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			2zRiWoaXBwq9QtgOUYsORx2pLnk=
+			lWD2CVY7WwNvUE0fw+tvVKCAU5E=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftCoreData" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftCoreData" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			IoAo6+P3VfwXYCVXrC/n0iJkniQ=
+			kPpHFnlH/mwrl4LuFpuj68zPmZ0=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftCoreGraphics" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftCoreGraphics" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			3f0dHDXag+uWDta0elOyketwbQw=
+			DSlx+nbD7o8/91tzBL0sCn6dQco=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftCoreImage" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftCoreImage" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			DjfWbXbVJDAIDeujNV3K/dCU2EI=
+			z6CGLi31kurpyYLyrwQg7fjiOK0=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftDarwin" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftDarwin" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			JORIFOR1jDHzDtEFSkAiTcpZHq0=
+			9xrXXvz0ZcuJi48FOsO9vkjXOHk=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftDispatch" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftDispatch" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			WmivFybMwnInhZ/V7t7vpAMjq6k=
+			j9yrJoVj0bWKBV/+NQ4H6w0lhIM=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftFoundation" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftFoundation" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftIOKit.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Myl4tIAE5K5MZiXUCezjyYuW00w=
+			CU59ZWZK34wRKFGYNX+oD5L8gFU=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftIOKit" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftIOKit" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			8qpt4f2liTuTty6xmMZOHE8mYcM=
+			FhsUSIMvJUHKpewTdFanCuAw5oc=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftObjectiveC" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftObjectiveC" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftQuartzCore.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			E3Qld/TJkRKFKDTjKYwixcmnm/4=
+			xeThEXos7UL1R4Nh5ooxOE7z0i4=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftQuartzCore" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftQuartzCore" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Frameworks/libswiftXPC.dylib</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			1WnqnMMxnJCTyJQfNFcsU8BYij4=
+			h7bYqX3F3jNwtj+u9BDfAhljsCw=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.apple.dt.runtime.swiftXPC" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: David Simmons (X4DR99DR3F)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftXPC" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "54PAT44GP7")</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YqnuxOt9TRNXybiu/7oCNHl3cG0=
+			mwmfY1p4DqfG2Ku0y/JD0INRUCw=
 			</data>
 			<key>hash2</key>
 			<data>
-			G9w33B87WlBmpPbSFzkr2ED0BzwrZS1MvqRNiyA/x08=
+			oL/Pm3FVqPrcpPBt3KCFNZBARpCTaizgBfyoWvhhlY8=
 			</data>
 		</dict>
 		<key>Resources/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1k2TvzZr26JYX6iTnYT5j4ud6RI=
+			thSxf1iPcYX3NAwgQSGgCNndJvQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			l89npEOT6CONmLlhoisp7YHKwKXCJP7ZYAWFoUbY9rY=
+			bkcLBDvS2DOxVOhHemXFkAqQ7nQ3kELQKthOqZGNZy4=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/03d-fS-Wz1-view-hIh-Jd-hHB.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UVbQv1/0v/vNfsF0eB4lYlsQL00=
+			J05A6bAvXsU2HzRb9rHyRa77Ta0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LGdy78FBuyIin9p+sdZe6RnzZE/6KvLgmUfjmzFWkhM=
+			2UMdNBE60aINbIZdwtjRKHZyjwiZ4OdkBHgVBMLzxxU=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N58rnbotcT7waiVQQbSGxiRbsAU=
+			dXGILAJ+6Dm3czE8wH5Grxmk42Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			agnkfa+HpodfWtlT4IOHwNtPrjEIEctd7fncYmhtp8c=
+			ga9rKnN/xIys8M45wg5g2+V/8oeCjftj32fXh6fKZn8=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ztAQST7/nOrlaHPos86h+FgB94g=
+			vZ/psVDf0tJf9uxMu1wKFoGCUMs=
 			</data>
 			<key>hash2</key>
 			<data>
-			gy11hTfZlMbsO9+6ik4K8B2GX/T0Oalnwaefk1q61RA=
+			+btltKLdVoIL2fFSCqu8HXE8LxzVxW1oz5MMevPbzug=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/NSViewController-UKj-aE-GhW.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MTowwAkkfxKHlNdyL5bc/oKsjyU=
+			uM+uZwJKBB/oGPFai9GZcFbggnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xo81BhcPsZz7nRHT1rGlgAL/ezOOCBqS0/NnigYSXbw=
+			gR10B5ZBO1tq/b5wOWP6fuyKn14Z4btcLN3GQ7M7VUI=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-82L-BE-E0N.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bbWh6vwTS6BISM0RnFacw0Tvsl8=
+			kyxSI91jUi3n6//I+0BmcSoMI9A=
 			</data>
 			<key>hash2</key>
 			<data>
-			a+L6omTkCnWeKuDVlWZne/CSuXg43tdiivNduvx4Kwo=
+			n7ZRhPTbUhhLO4Z0aKN+Sddt7f1IAMBJnnnX5zmeR/w=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/LpuOC8EY5+kkIooWCAXhTw9xvs=
+			V7z3uBX/yw/ExY8HlqRSd1zzlJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vLFCt8xq/KyeZaa32KbOmbUU7Hes698M0aHFw5c75PU=
+			5jrU1BSpnz1LMxr1LDnB6yYTpHsUnBy0kCv8waaxi0I=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/UKj-aE-GhW-view-aDi-oJ-7RB.nib</key>
@@ -262,22 +262,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n8yb3gADADIF0DQJsmV7diFPVhE=
+			ttzZusOjmLU5CVar2jU280CmvaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ILcXEgOOjTX+AJaQ9O4oV4f0Kxa2qBmOPS/Itz1fwOU=
+			mXybhkHxs7nv6kLBAAMprBGO00VIlAJoAx674Thtiow=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/prefsView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ung2EXvSIkiRJWNhhF3hJ7hbEVU=
+			/uSs2sSxqV+hk1tZJdbksV6nwvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zpGVSjlx3abr2w+VqqnwgD852eoyK8Y6MWSJmkJ6rAY=
+			/xqdhfg7tU2o/+KaTqgFXA+w3iEptqSYcSNwTelkGCA=
 			</data>
 		</dict>
 	</dict>
