@@ -16,6 +16,10 @@
 		681D5E231E0ABBB600F33CF1 /* PrefsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E221E0ABBB600F33CF1 /* PrefsView.swift */; };
 		681D5E251E0ABF5D00F33CF1 /* MyNewtSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E241E0ABF5D00F33CF1 /* MyNewtSensor.swift */; };
 		681D5E271E0AC01500F33CF1 /* MyNewtDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681D5E261E0AC01500F33CF1 /* MyNewtDev.swift */; };
+		682E5C2F1E1EB83700A55B9B /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682E5C2E1E1EB83700A55B9B /* Scan.storyboard */; };
+		682E5C331E1EB88100A55B9B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682E5C301E1EB88100A55B9B /* Device.swift */; };
+		682E5C341E1EB88100A55B9B /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682E5C311E1EB88100A55B9B /* ScanViewController.swift */; };
+		682E5C351E1EB88100A55B9B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682E5C321E1EB88100A55B9B /* Service.swift */; };
 		6859622B1E0AFDB500AB01A7 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685962291E0AFDB500AB01A7 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,10 @@
 		681D5E221E0ABBB600F33CF1 /* PrefsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsView.swift; sourceTree = "<group>"; };
 		681D5E241E0ABF5D00F33CF1 /* MyNewtSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNewtSensor.swift; sourceTree = "<group>"; };
 		681D5E261E0AC01500F33CF1 /* MyNewtDev.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNewtDev.swift; sourceTree = "<group>"; };
+		682E5C2E1E1EB83700A55B9B /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
+		682E5C301E1EB88100A55B9B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		682E5C311E1EB88100A55B9B /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		682E5C321E1EB88100A55B9B /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		685962291E0AFDB500AB01A7 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,9 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				681D5DF71E09D3DB00F33CF1 /* AppDelegate.swift */,
+				682E5C301E1EB88100A55B9B /* Device.swift */,
+				682E5C311E1EB88100A55B9B /* ScanViewController.swift */,
+				682E5C321E1EB88100A55B9B /* Service.swift */,
 				681D5DF91E09D3DB00F33CF1 /* ViewController.swift */,
 				681D5DFB1E09D3DB00F33CF1 /* Assets.xcassets */,
 				681D5DFD1E09D3DB00F33CF1 /* Main.storyboard */,
+				682E5C2E1E1EB83700A55B9B /* Scan.storyboard */,
 				685962291E0AFDB500AB01A7 /* HelpViewController.swift */,
 				681D5E221E0ABBB600F33CF1 /* PrefsView.swift */,
 				681D5E241E0ABF5D00F33CF1 /* MyNewtSensor.swift */,
@@ -246,6 +258,7 @@
 			files = (
 				681D5DFC1E09D3DB00F33CF1 /* Assets.xcassets in Resources */,
 				681D5DFF1E09D3DB00F33CF1 /* Main.storyboard in Resources */,
+				682E5C2F1E1EB83700A55B9B /* Scan.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,12 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682E5C331E1EB88100A55B9B /* Device.swift in Sources */,
+				682E5C351E1EB88100A55B9B /* Service.swift in Sources */,
 				681D5E231E0ABBB600F33CF1 /* PrefsView.swift in Sources */,
 				6859622B1E0AFDB500AB01A7 /* HelpViewController.swift in Sources */,
 				681D5DFA1E09D3DB00F33CF1 /* ViewController.swift in Sources */,
 				681D5E271E0AC01500F33CF1 /* MyNewtDev.swift in Sources */,
 				681D5DF81E09D3DB00F33CF1 /* AppDelegate.swift in Sources */,
 				681D5E251E0ABF5D00F33CF1 /* MyNewtSensor.swift in Sources */,
+				682E5C341E1EB88100A55B9B /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -405,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

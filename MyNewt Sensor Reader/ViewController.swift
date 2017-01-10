@@ -40,9 +40,15 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     @IBOutlet weak var myNewtTableView: NSTableView!
     @IBOutlet var myNewtArrayController: NSArrayController!
     
-    lazy var prefsContoller: NSViewController = {
+    
+    lazy var prefsController: NSViewController = {
         return self.storyboard!.instantiateController(withIdentifier: "prefsView")
             as! NSViewController
+    }()
+    var scanStory: NSStoryboard = NSStoryboard.init(name: "Scan", bundle: nil)
+    var scanViewController: NSViewController = {
+        var s = NSStoryboard.init(name: "Scan", bundle: nil).instantiateInitialController() as! NSWindowController
+           return s.contentViewController!
     }()
     
     dynamic var newtSensors = [MyNewtSensor]()
@@ -55,6 +61,8 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     let prefs = UserDefaults.standard
     var centralManager : CBCentralManager!
     var myNewtPeripheral : CBPeripheral!
+    
+    var myTimer: Timer!
 
     
     override func viewDidLoad() {
@@ -62,6 +70,7 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
         self.view.wantsLayer = true
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateNotificationSentLabel), name: NSNotification.Name(rawValue: myNotification), object: nil)
         centralManager = CBCentralManager.init(delegate: self, queue: nil, options: nil)
+        self.isScanning = true
         // Do any additional setup after loading the view.
         // Set up title label
         statusLabel.stringValue = "Loading..."
@@ -129,6 +138,12 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
 
     }
     
+    @IBAction func searchButtonAction(_ sender: Any) {
+        // show the search sheet
+        stopAll()
+        savePrefs()
+        self.presentViewControllerAsSheet(scanViewController)
+    }
     
     
     // settingsButton
@@ -137,7 +152,7 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
         //disconnect, then show
         stopAll()
         savePrefs()
-        self.presentViewControllerAsSheet(prefsContoller)
+        self.presentViewControllerAsSheet(prefsController)
     }
     
     
@@ -151,6 +166,7 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
         prefs.set(myNewt.dataPrefix, forKey: "dataPrefix")
         prefs.set(myNewt.deviceName, forKey: "deviceName")
         prefs.set(self.alwaysConn, forKey: "alwaysConnected")
+        prefs.set(myNewt.rssiUpdate, forKey: "rssiUpdate")
 
     }
     
@@ -167,6 +183,7 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
         myNewt.configPrefix = prefs.string(forKey: "configPrefix")!
         myNewt.dataPrefix = prefs.string(forKey: "dataPrefix")!
         myNewt.deviceName = prefs.string(forKey: "deviceName")!
+        myNewt.rssiUpdate = prefs.integer(forKey: "rssiUpdate")
         
         
 
@@ -211,9 +228,13 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
             self.isScanning = false
             self.isConnected = false
             centralManager.cancelPeripheralConnection(self.myNewtPeripheral)
+            centralManager.stopScan()
             newtSensors = [MyNewtSensor]()
             self.rssiButton.image = NSImage(named: "NoSignal-sm")!
             self.deviceNameLabel.stringValue = "None"
+            if(myTimer != nil && myTimer.isValid){
+                myTimer.invalidate()
+            }
         }
         else if( self.isScanning){
             centralManager.stopScan()
@@ -222,6 +243,9 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
             self.disconnectButton.title = "Re-Scan"
             self.rssiButton.image = NSImage(named: "NoSignal-sm")!
             self.deviceNameLabel.stringValue = "None"
+            if(myTimer != nil && myTimer.isValid){
+                myTimer.invalidate()
+            }
         }
 
     }
@@ -263,6 +287,9 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
             self.myNewtPeripheral = peripheral
             self.myNewtPeripheral.delegate = self
             self.centralManager.connect(peripheral, options: nil)
+            let interval = Double.init(prefs.integer(forKey: "rssiUpdate"))
+            
+            myTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(readRSSI), userInfo: nil, repeats: true)
         }
     }
     
@@ -361,12 +388,13 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     // Get data values when they are updated
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         self.statusLabel.stringValue = "Connected"
+        self.deviceNameLabel.stringValue = peripheral.name!
         // print("Characteristic: \(characteristic.uuid.uuidString) Value: \(String(bytes: characteristic.value!, encoding: String.Encoding.utf8)!)")
         let charType = characteristic.uuid.uuidString.substring(to: characteristic.uuid.uuidString.index(characteristic.uuid.uuidString.startIndex, offsetBy: 2))
         
         let charVal = characteristic.uuid.uuidString.substring(from: characteristic.uuid.uuidString.index(characteristic.uuid.uuidString.startIndex, offsetBy: 2))
         let uuid = characteristic.uuid.uuidString
-        self.readRSSI()
+        // self.readRSSI()
         for i in 0..<newtSensors.count {
             if(newtSensors[i].containsValue(value: uuid)) {
                 newtSensors[i].updateValue(key: uuid, value: characteristic.value!)

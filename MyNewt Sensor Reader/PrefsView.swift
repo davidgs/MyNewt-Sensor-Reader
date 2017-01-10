@@ -35,6 +35,8 @@ class PrefsView: NSViewController {
     @IBOutlet weak var dataPrefixField: NSTextField!
     @IBOutlet weak var exactMatchButton: NSButton!
     @IBOutlet weak var subscribeAllButton: NSButton!
+    @IBOutlet weak var rssiRefreshVal: NSTextField!
+    @IBOutlet weak var rssiChanger: NSStepper!
     
     let prefs = UserDefaults.standard
 
@@ -60,6 +62,11 @@ class PrefsView: NSViewController {
         
     }
     
+    @IBAction func rssiRefreshChange(_ sender: NSStepper) {
+        let val : Int = sender.integerValue
+        myNewt.setRSSIUpdate(interval: val)
+        self.rssiRefreshVal.stringValue = sender.stringValue
+    }
     
     func notify() {
         NotificationCenter.default.post(name: Notification.Name(rawValue: myNotification), object: self)
@@ -117,6 +124,10 @@ class PrefsView: NSViewController {
         }
         myNewt.exactMatch = prefs.bool(forKey: "exactMatch")
         print("exact match: \(prefs.bool(forKey: "exactMatch"))")
+        rssiChanger.setValue(prefs.integer(forKey: "rssiUpdate"), forKey: "IntegerValue")
+        // self.rssiChanger.setValue()
+        self.rssiRefreshVal.stringValue = rssiChanger.stringValue
+        
     }
 
     func savePrefs(){
@@ -136,6 +147,7 @@ class PrefsView: NSViewController {
         if(self.hostNameField.stringValue != "" && self.hostNameField.stringValue != "nimble"){
             prefs.set(self.hostNameField.stringValue, forKey: "deviceName")
         }
+        prefs.set(self.rssiChanger.integerValue, forKey: "rssiUpdate")
         
     }
     

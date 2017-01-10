@@ -32,7 +32,6 @@ import CoreBluetooth
 class MyNewtDev {
     var deviceName = "nimble"
     var deviceString = "None"
-    // Service UUIDs
     var MyNewtSensorServiceUUID = CBUUID(string: "E761D2AF-1C15-4FA7-AF80-B5729020B340")
     
     
@@ -42,6 +41,8 @@ class MyNewtDev {
     
     var subscribeAll : Bool = false
     var exactMatch : Bool = false
+    
+    var rssiUpdate = 1
 
     // Check name of device from advertisement data
     func MyNewtDevFound (advertisementData: [NSObject : AnyObject]!) -> Bool {
@@ -73,21 +74,68 @@ class MyNewtDev {
         }
     }
     
-    func setDeviceName(name: String){
-        deviceName = name
-    }
     
     func setUUID(newUUID : String){
         let ud = CBUUID(string: newUUID)
-            MyNewtSensorServiceUUID = ud
+            self.MyNewtSensorServiceUUID = ud
     }
     
     func setConfigPrefix(prefix: String){
-        configPrefix = prefix
+        self.configPrefix = prefix
     }
     
     func setDataPrefix(prefix: String){
-        dataPrefix = prefix
+        self.dataPrefix = prefix
+    }
+    
+    func getDeviceName () -> String {
+        return self.deviceName
+    }
+    
+    func setDeviceName(name: String){
+        self.deviceName = name
+    }
+    
+    func getServiceUUID() -> String {
+        return self.MyNewtSensorServiceUUID.uuidString
+    }
+    
+    func setServiceUUID(uuid: String){
+        self.MyNewtSensorServiceUUID = CBUUID(string: uuid)
+    }
+    
+    func getExactMatch() -> Bool {
+        return self.exactMatch
+    }
+    
+    func setExactMatch(match: Bool){
+        self.exactMatch = match
+    }
+    
+    func getConfigPrefix() -> String {
+        return self.configPrefix
+    }
+    
+    func getDataPrefix() -> String {
+        return self.dataPrefix
+    }
+    
+    
+    
+    func getDeviceString() -> String {
+        return self.deviceString
+    }
+    
+    func getSubAll() -> Bool {
+        return self.subscribeAll
+    }
+    
+    func setSubAll(subscribe: Bool) {
+        self.subscribeAll = subscribe
+    }
+    
+    func setRSSIUpdate(interval: Int){
+        self.rssiUpdate = interval
     }
     
     // Check if the characteristic has a valid data UUID prefix
@@ -119,11 +167,18 @@ class MyNewtDev {
         }
     }
     
-    func getDeviceName () -> String {
-        return deviceName
+    
+    func savePrefs(){
+        let prefs = UserDefaults.standard
+        prefs.set(getSubAll(), forKey: "subscribeAll")
+        prefs.set(getExactMatch(), forKey: "exactMatch")
+        prefs.set(getServiceUUID(), forKey: "serviceUUID")
+        prefs.set(getConfigPrefix(), forKey: "configPrefix")
+        prefs.set(getDataPrefix(), forKey: "dataPrefix")
+        prefs.set(getDeviceName(), forKey: "deviceName")
+        prefs.set(rssiUpdate, forKey: "rssiUpdate")
     }
-    
-    
+
     
     
     // Process the values from sensor
