@@ -25,7 +25,7 @@
 
 import Cocoa
 
-let myNewt = MyNewtDev()
+var myNewt = MyNewtDev()
 let myNotification = "com.dragonflyiot.endedit"
 
 @NSApplicationMain

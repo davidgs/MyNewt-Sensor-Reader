@@ -389,7 +389,11 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         self.statusLabel.stringValue = "Connected"
         self.deviceNameLabel.stringValue = peripheral.name!
-        // print("Characteristic: \(characteristic.uuid.uuidString) Value: \(String(bytes: characteristic.value!, encoding: String.Encoding.utf8)!)")
+        let b = MyNewtDev.getAmbientTemperature(value: characteristic.value! as NSData)
+        if(b == nil) {
+            return
+        }
+        print("Characteristic: \(characteristic.uuid.uuidString) Value: \(b)")
         let charType = characteristic.uuid.uuidString.substring(to: characteristic.uuid.uuidString.index(characteristic.uuid.uuidString.startIndex, offsetBy: 2))
         
         let charVal = characteristic.uuid.uuidString.substring(from: characteristic.uuid.uuidString.index(characteristic.uuid.uuidString.startIndex, offsetBy: 2))

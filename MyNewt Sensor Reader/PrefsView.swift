@@ -62,6 +62,35 @@ class PrefsView: NSViewController {
         
     }
     
+    @IBAction func resetAction(_ sender: Any) {
+        myNewt = MyNewtDev(reset: true)
+        myNewt.savePrefs()
+        myNewt.loadPrefs()
+        self.configPrefixField.stringValue = ""
+        self.dataPrefixField.stringValue = ""
+        self.hostNameField.stringValue = ""
+        self.serviceUUIDField.stringValue = ""
+        self.exactMatchButton.isEnabled = false
+        self.subscribeAllButton.isEnabled = false
+        self.rssiChanger.setValue(1, forKey: "IntegerValue")
+        self.rssiRefreshVal.stringValue = "1"
+        
+        
+    }
+    
+    @IBAction func refreshChangedAction(_ sender: NSTextField) {
+        let val = sender.stringValue
+        let intVal = Int(val)
+        if (intVal != nil){
+            if(intVal! <= 0 || intVal! >= 101){
+                self.rssiRefreshVal.stringValue = self.rssiChanger.stringValue
+            } else {
+                myNewt.rssiUpdate = intVal!
+                self.rssiChanger.integerValue = intVal!
+            }
+        }
+        self.rssiRefreshVal.stringValue = self.rssiChanger.stringValue
+    }
     @IBAction func rssiRefreshChange(_ sender: NSStepper) {
         let val : Int = sender.integerValue
         myNewt.setRSSIUpdate(interval: val)

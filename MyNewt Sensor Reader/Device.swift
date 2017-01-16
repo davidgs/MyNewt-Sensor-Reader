@@ -60,7 +60,6 @@ class Device: NSObject, TreeNode {
     
     func addService(serviceName: String, serviceID: String){
         let serv = "\(serviceName) # \(serviceNo)"
-        
         serviceStore.append(Service(name: serv, id: serviceID))
         serviceNo += 1
     }

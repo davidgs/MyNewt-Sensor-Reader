@@ -71,6 +71,10 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
 
     override func viewWillDisappear() {
         self.deviceManager.stopScan()
+        self.deviceStore = [TreeNode]()
+        self.treeController.rearrangeObjects()
+        self.outlineView.reloadData()
+        self.outlineView.setNeedsDisplay()
     }
     
     func notify() {
@@ -85,7 +89,6 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
     
 
     @IBAction func okAction(_ sender: Any) {
-        
         self.deviceManager.stopScan()
         myNewt.setDeviceName(name: self.conPeriph)
         myNewt.setServiceUUID(uuid: self.connService)
@@ -101,7 +104,6 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
         self.deviceManager.stopScan()
         self.dismiss(self)
         notify()
-
     }
     
     
@@ -121,9 +123,9 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         let nameOfDeviceFound = (advertisementData as NSDictionary).object(forKey: CBAdvertisementDataLocalNameKey) as? NSString
+        let myUUID = CBUUID(nsuuid: peripheral.identifier)
+        print("AD DATA: \(nameOfDeviceFound) UUID: \(myUUID.uuidString)")
         if(nameOfDeviceFound != nil){
-            let myUUID = CBUUID(nsuuid: peripheral.identifier)
-            print("AD DATA: \(nameOfDeviceFound) UUID: \(myUUID.uuidString)")
             var seen = false
             for i in 0..<deviceStore.count {
               if(deviceStore[i].containsName(name: nameOfDeviceFound as! String) || deviceStore[i].containsUUID(uuid: myUUID)){
@@ -146,8 +148,7 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
     
     // Discover services of the peripheral
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
-        //        peripheral.discoverServices(nil)
-        print("did connect")
+        print("Connected to device: \(peripheral.name)")
         peripheral.delegate = self
         peripheral.discoverServices(nil)
     }
@@ -157,6 +158,7 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         print("disconnected")
         deviceManager.scanForPeripherals(withServices: nil, options: nil)
+        print("Restarting scan for devices ...")
     }
     
     /******* CBCentralPeripheralDelegate *******/
@@ -209,7 +211,7 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
     
     func outlineViewSelectionDidChange(_ notification: Notification) {
         self.okButton.isEnabled = false
-        print(notification)
+        //print(notification)
         let selectedIndex = (notification.object as AnyObject).selectedRow!
         let selCol1 = outlineView.view(atColumn: 0, row: selectedIndex, makeIfNecessary: false)?.subviews.last as! NSTextField
         let selCol2 = outlineView.view(atColumn: 1, row: selectedIndex, makeIfNecessary: false)?.subviews.last as! NSTextField
@@ -220,7 +222,7 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
         let thisUUID = CBUUID(string: devID)
         switch devName {
         case "Service: " :
-            print("This is a service")
+            //print("This is a service")
             for i in 0..<deviceStore.count {
                 let dev = deviceStore[i] as! Device
                 for x in 0..<dev.serviceStore.count {
@@ -237,7 +239,8 @@ class ScanViewController: NSViewController, CBCentralManagerDelegate, CBPeripher
             }
             break
         default :
-            print("This is a Device")
+            //print("This is a Device")
+            break
         }
     }
     

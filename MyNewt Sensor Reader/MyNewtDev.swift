@@ -44,6 +44,13 @@ class MyNewtDev {
     
     var rssiUpdate = 1
 
+    init(){
+        loadPrefs()
+    }
+    
+    init(reset: Bool){
+        
+    }
     // Check name of device from advertisement data
     func MyNewtDevFound (advertisementData: [NSObject : AnyObject]!) -> Bool {
         let nameOfDeviceFound = (advertisementData as NSDictionary).object(forKey: CBAdvertisementDataLocalNameKey) as? NSString
@@ -167,6 +174,39 @@ class MyNewtDev {
         }
     }
     
+    
+    
+    func loadPrefs(){
+        //application.keyWindow?.rootViewController?.childViewControllers[1] as! SecondViewController
+        let prefs = UserDefaults.standard
+        if let lastDev = prefs.string(forKey: "deviceName"){
+            print("The user has a defined Device Name: " + lastDev)
+            setDeviceName(name: lastDev)
+            
+        }
+        if let dataPrefix = prefs.string(forKey: "dataPrefix"){
+            setDataPrefix(prefix: dataPrefix)
+            print("Data Prefix: \(dataPrefix)")
+            
+        }
+        if let configPrefix = prefs.string(forKey: "configPrefix"){
+            setConfigPrefix(prefix: configPrefix)
+            print("Config Prefix: \(configPrefix)")
+            
+        }
+        if let serviceUUID = prefs.string(forKey: "serviceUUID"){
+            setServiceUUID(uuid: serviceUUID)
+            print("Service UUID: \(serviceUUID)")
+            
+        }
+        let b = prefs.bool(forKey: "subscribeAll")
+        setSubAll(subscribe: b)
+        print("Subscribe all: \(b)")
+        let c = prefs.bool(forKey: "exactMatch")
+        setExactMatch(match: c)
+        print("exact match: \(c)")
+        
+    }
     
     func savePrefs(){
         let prefs = UserDefaults.standard
